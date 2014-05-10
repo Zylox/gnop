@@ -6,6 +6,8 @@ Object.freeze(SHAPE);
 var sound = true;
 var diff = .925;
 
+var theNumba = 3;
+
 $(document).ready(function(){
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
@@ -68,7 +70,6 @@ function game(){
 		if(shape == SHAPE.RECTANGLE){
 			ctx.fillRect(x, y, 15, 60);
 		}else if(shape == SHAPE.BALL){
-			console.log("ball");
 			ctx.fillRect(x, y, 10, 10);
 		}
 
